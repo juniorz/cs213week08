@@ -2,26 +2,81 @@
 
 /*
 * You must only use FlexBox for this section.
-* Center the section horizontally on the page and move the section 1rem down from the top of the page.
-* Center the <ul> with the class “center_list” both horizontally and vertically within the section.
-* Both the section and the <ul> must remain centered at all screen sizes.
+* a. Center the section horizontally on the page and move the section 1rem down from the top of the page.
+* b. Center the <ul> with the class “center_list” both horizontally and vertically within the section.
+* c. Both the section and the <ul> must remain centered at all screen sizes.
 */
 
 #flex_first {
-    /* background-color: brown !important; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem auto 0 auto;
 }
 
+/* For flex_second */
+/*
+ * You must only use FlexBox for this section.
+ * a. Place the form labels and input elements in a single column with the form labels and input elements stacked on top of each other.
+ * b. The individual radio buttons and checkboxes must be stacked on top of each other.
+ */
+
+/* TODO: Paste from Dan Worwood */
+
+/* For grid_first */
+/*
+ * You must only use CSS Grid for this section. At all sizes, the articles must have a 1rem gap between each other.
+ * a. Small size: Place the articles in a single column.
+ * b. Medium size: Place the articles in two columns of equal widths.
+ * c. Large size: Place the articles in four columns of equal widths.
+ */
+
+#grid_first {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    #grid_first {
+        grid-template-columns: auto auto auto auto;
+     }
+}
+
+@media only screen and (max-width: 1000px) {
+    #grid_first {
+        grid-template-columns: auto auto;
+     }
+}
+
 @media only screen and (max-width: 500px) {
-     /* You just cannot use CSS Grid (display: grid) */
-    #flex_first {
-        /* background-color: brown !important; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem auto 0 auto;
-    }
-  }
+    #grid_first {
+        grid-template-columns: auto;
+     }
+}
+
+/* For grid_second */
+/*
+ * You must only use CSS Grid for the main layout, but you must only use FlexBox for laying out the contents of box9. At all sizes, the divs must have a 1rem gap between each other. At all sizes the divs must be a minimum of 100px tall.
+ * a. Small size:
+ * i. Place the divs in a single column.
+ * ii. The contents of box9 must be placed in a column so that the items are spaced evenly and stretched to fit box9.
+
+ * b.Medium size:
+ * i. Place the divs in 2 columns of equal widths.
+ * ii. Box1 must span 2 columns and take up 2 rows.
+ * iii. The contents of box9 must be placed in a row, centered within box9, and allowed to wrap.
+
+ * c. Large size:
+ * i. Place the divs in 3 columns of equal widths.
+ * ii. Box1 must span 3 columns and take up 2 rows.
+ * iii. The contents of box9 must still be placed in a row and centered within box9, but cannot wrap. c. Large size: Place the articles in four columns of equal widths.
+ */
+
+@media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 1300px) {
+}
