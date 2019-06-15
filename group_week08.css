@@ -1,0 +1,27 @@
+/* For flex_first */
+
+/*
+* You must only use FlexBox for this section.
+* Center the section horizontally on the page and move the section 1rem down from the top of the page.
+* Center the <ul> with the class “center_list” both horizontally and vertically within the section.
+* Both the section and the <ul> must remain centered at all screen sizes.
+*/
+
+#flex_first {
+    /* background-color: brown !important; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+     /* You just cannot use CSS Grid (display: grid) */
+    #flex_first {
+        /* background-color: brown !important; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto 0 auto;
+    }
+  }
